@@ -130,7 +130,19 @@ namespace Quiz2
             Console.WriteLine("----------");
             Console.WriteLine("");
             B.getSunflower();
+            string Con;
+            Console.WriteLine("");
+            Console.WriteLine("Please Enter");
+            Con = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Roses Information");
+            Console.WriteLine("----------");
+            Console.WriteLine("Name : {0}", ดอกกุหลาบสีเขียว.Name);
+            Console.WriteLine("Name : ดอกกุหลาบสีแดง");
+            Console.WriteLine("SunFlowers Information");
+            Console.WriteLine("----------");
+            Console.WriteLine("Name : {0}", ดอกทานตะวันเล็ก.Name);
+            Console.WriteLine("Name : ดอกทานตะวันใหญ่");
         }
-       
     }
 }
