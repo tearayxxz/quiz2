@@ -100,12 +100,6 @@ namespace Quiz2
     {
         static void Main(string[] args)
         {
-            SellRose();
-            Console.WriteLine("");
-            SellsunFlower();
-        }
-        static void SellRose()
-        {
             User1 A = new User1("A");
             Rose ดอกกุหลาบสีเขียว = new Rose(
                 1,
@@ -114,17 +108,6 @@ namespace Quiz2
                 "10.5",
                 "6"
                 );
-            Console.Write("Input Total Rose: ");
-            ดอกกุหลาบสีเขียว.Amount = int.Parse(Console.ReadLine());
-            A.addRose(ดอกกุหลาบสีเขียว);
-            Console.WriteLine("Input Rose");
-            Console.WriteLine("----------");
-            Console.WriteLine("");
-            A.getRose();
-            
-        }
-        static void SellsunFlower()
-        {
             User2 B = new User2("B");
             Sunflower ดอกทานตะวันเล็ก = new Sunflower(
                 1,
@@ -133,14 +116,21 @@ namespace Quiz2
                 "2.0",
                 "2.0"
                 );
+            Console.Write("Input Total Rose: ");
+            ดอกกุหลาบสีเขียว.Amount = int.Parse(Console.ReadLine());
             Console.Write("Input Total Sunflower: ");
             ดอกทานตะวันเล็ก.Amount = int.Parse(Console.ReadLine());
+            A.addRose(ดอกกุหลาบสีเขียว);
+            Console.WriteLine("Input Rose");
+            Console.WriteLine("----------");
+            Console.WriteLine("");
+            A.getRose();
             B.addSunflower(ดอกทานตะวันเล็ก);
             Console.WriteLine("Input Sunflower");
             Console.WriteLine("----------");
             Console.WriteLine("");
             B.getSunflower();
-
         }
+       
     }
 }
