@@ -108,8 +108,22 @@ namespace Quiz2
                 "10.5",
                 "6"
                 );
+            Rose ดอกกุหลาบสีแดง = new Rose(
+                1,
+                "ดอกกุหลาบสีแดง",
+                "สวยงามมาก",
+                "10.5",
+                "6"
+                );
             User2 B = new User2("B");
             Sunflower ดอกทานตะวันเล็ก = new Sunflower(
+                1,
+                "ดอกทานตะวันเล็ก",
+                "สวยงาม",
+                "2.0",
+                "2.0"
+                );
+            Sunflower ดอกทานตะวันใหญ่ = new Sunflower(
                 1,
                 "ดอกทานตะวันเล็ก",
                 "สวยงาม",
@@ -138,11 +152,12 @@ namespace Quiz2
             Console.WriteLine("Roses Information");
             Console.WriteLine("----------");
             Console.WriteLine("Name : {0}", ดอกกุหลาบสีเขียว.Name);
-            Console.WriteLine("Name : ดอกกุหลาบสีแดง");
+            Console.WriteLine("Name : {0}",ดอกกุหลาบสีแดง.Name);
+            Console.WriteLine("");
             Console.WriteLine("SunFlowers Information");
             Console.WriteLine("----------");
             Console.WriteLine("Name : {0}", ดอกทานตะวันเล็ก.Name);
-            Console.WriteLine("Name : ดอกทานตะวันใหญ่");
+            Console.WriteLine("Name : {0}", ดอกทานตะวันใหญ่.Name);
         }
     }
 }
